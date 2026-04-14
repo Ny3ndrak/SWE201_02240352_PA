@@ -2,7 +2,7 @@
 
 A comprehensive React Native mobile application designed to help students quickly access key campus information. Built with Expo and React Navigation, this app provides an intuitive interface for viewing important contacts, class schedules, and campus notices.
 
-## 📱 App Overview
+## App Overview
 
 Campus Companion is a multi-screen mobile application that demonstrates core React Native concepts including:
 
@@ -20,7 +20,7 @@ Campus Companion is a multi-screen mobile application that demonstrates core Rea
 4. **Notice Board**: Campus announcements with priority-based styling
 5. **Contact Details**: Detailed contact view demonstrating parameter passing
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 Campus_Companion/
@@ -45,7 +45,7 @@ Campus_Companion/
 └── babel.config.js       # Babel configuration
 ```
 
-## 🚀 Installation
+## Installation
 
 ### Prerequisites
 
@@ -72,7 +72,7 @@ Campus_Companion/
 
 3. **Wait for installation to complete** (this may take a few minutes)
 
-## 🎯 Running the App
+## Running the App
 
 ### Start the Development Server
 
@@ -88,7 +88,7 @@ This will start the Expo development server and display a QR code in your termin
 
 ### Run on Different Platforms
 
-#### 🤖 Android Emulator
+#### Android Emulator
 ```bash
 npm run android
 ```
@@ -96,7 +96,7 @@ or press `a` in the terminal after running `npm start`
 
 **Prerequisites**: Android Studio with an Android Virtual Device (AVD) configured
 
-#### 🍎 iOS Simulator (macOS only)
+#### iOS Simulator (macOS only)
 ```bash
 npm run ios
 ```
@@ -104,14 +104,14 @@ or press `i` in the terminal after running `npm start`
 
 **Prerequisites**: Xcode installed on macOS
 
-#### 📱 Physical Device
+#### Physical Device
 1. Install **Expo Go** app from Google Play Store or Apple App Store
 2. Run `npm start`
 3. Scan the QR code displayed in the terminal using:
    - **Android**: Expo Go app
    - **iOS**: Camera app (will open in Expo Go)
 
-#### 🌐 Web Browser
+#### Web Browser
 ```bash
 npm run web
 ```
@@ -130,9 +130,9 @@ or
 npm start -- --clear
 ```
 
-## 🎨 Features Implemented
+## Features Implemented
 
-### ✅ Functional Requirements
+### Functional Requirements
 
 1. **Multiple Screens (4+)**
    - Home Screen: App title and navigation entry points
@@ -158,7 +158,7 @@ npm start -- --clear
    - ScrollView/FlatList for scrollable content
    - Adaptive layouts for different screen sizes
 
-### 🎯 Technical Highlights
+### Technical Highlights
 
 - **TypeScript**: Type-safe code throughout the application
 - **Theme System**: Custom theme provider with light/dark mode support
@@ -166,7 +166,7 @@ npm start -- --clear
 - **Performance Optimization**: FlatList optimizations for large lists
 - **Code Organization**: Clear separation of concerns with screens, navigation, and components
 
-## 📋 Known Issues and Limitations
+## Known Issues and Limitations
 
 1. **Static Data**: Currently uses hardcoded data for contacts, schedules, and notices
    - Future enhancement: Integrate with backend API
@@ -183,7 +183,7 @@ npm start -- --clear
 5. **Accessibility**: Basic accessibility support
    - Future enhancement: Enhanced screen reader support and accessibility labels
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **React Native**: 0.81.5
 - **Expo**: ~54.0.0
@@ -193,7 +193,7 @@ npm start -- --clear
 - **TypeScript**: 5.3.0
 - **React**: 19.1.0
 
-## 📚 Development Notes
+## Development Notes
 
 ### Theme System
 The app uses a custom theme system with:
@@ -218,28 +218,28 @@ Stack Navigator (Root)
 - AppNavigator sets up the navigation structure
 - Individual screens use theme context for consistent styling
 
-## 📝 Assignment Requirements Met
+## Assignment Requirements Met
 
-- ✅ Minimum 4 screens implemented (5 total)
-- ✅ Stack Navigator + Bottom Tab Navigator
-- ✅ Parameter passing between screens (Contacts → Contact Detail)
-- ✅ StyleSheet and Flexbox for all layouts
-- ✅ Dynamic styling (theme toggle)
-- ✅ Platform-specific styles using Platform API
-- ✅ Dimensions API for responsive design
-- ✅ ScrollView and FlatList for scrollable content
-- ✅ Clean code organization with separate folders
-- ✅ TypeScript for type safety
-- ✅ Comprehensive README with installation and running instructions
+- Minimum 4 screens implemented (5 total)
+- Stack Navigator + Bottom Tab Navigator
+- Parameter passing between screens (Contacts → Contact Detail)
+- StyleSheet and Flexbox for all layouts
+- Dynamic styling (theme toggle)
+- Platform-specific styles using Platform API
+- Dimensions API for responsive design
+- ScrollView and FlatList for scrollable content
+- Clean code organization with separate folders
+- TypeScript for type safety
+- Comprehensive README with installation and running instructions
 
-## 👨‍💻 Author
+## Author
 
 **Student Name**: [Your Name]  
 **Student ID**: [Your Student ID]  
 **Module**: SWE201 – Cross Platform Development  
 **Institution**: College of Science and Technology, Royal University of Bhutan
 
-## 📄 License
+## License
 
 This project is created for academic purposes as part of the SWE201 course assignment.
 
