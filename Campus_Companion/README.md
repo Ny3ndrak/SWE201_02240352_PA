@@ -213,36 +213,4 @@ Stack Navigator (Root)
 └── Contact Detail Screen
 ```
 
-### Component Hierarchy
-- App.tsx wraps the entire app with ThemeProvider
-- AppNavigator sets up the navigation structure
-- Individual screens use theme context for consistent styling
 
-## Assignment Requirements Met
-
-- Minimum 4 screens implemented (5 total)
-- Stack Navigator + Bottom Tab Navigator
-- Parameter passing between screens (Contacts → Contact Detail)
-- StyleSheet and Flexbox for all layouts
-- Dynamic styling (theme toggle)
-- Platform-specific styles using Platform API
-- Dimensions API for responsive design
-- ScrollView and FlatList for scrollable content
-- Clean code organization with separate folders
-- TypeScript for type safety
-- Comprehensive README with installation and running instructions
-
-## Author
-
-**Student Name**: [Your Name]  
-**Student ID**: [Your Student ID]  
-**Module**: SWE201 – Cross Platform Development  
-**Institution**: College of Science and Technology, Royal University of Bhutan
-
-## License
-
-This project is created for academic purposes as part of the SWE201 course assignment.
-
----
-
-**Last Updated**: April 14, 2026
