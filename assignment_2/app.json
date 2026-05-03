@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Campus Companion",
+    "slug": "campus-companion",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.campuscompanion.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.campuscompanion.app"
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
