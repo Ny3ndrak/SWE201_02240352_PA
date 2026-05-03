@@ -1,4 +1,4 @@
-# Student Planner 📱
+# Student Planner 
 
 > **A simple productivity app with smooth animations and task management**
 
@@ -119,8 +119,6 @@ For detailed documentation including:
 
 ---
 
-## 🎓 Learning Outcomes
-
 This project demonstrates:
 - ✅ React Navigation mastery
 - ✅ Advanced animation techniques
@@ -173,7 +171,7 @@ npm test
 
 ---
 
-## 📄 License
+##  License
 
 Educational purposes - SWE201 Coursework
 
