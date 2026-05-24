@@ -1,0 +1,3 @@
+// Supabase configuration
+export const SUPABASE_URL = 'https://kfkfwozrgarjusvufryx.supabase.co';
+export const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imtma2Z3b3pyZ2FyanVzdnVmcnl4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk1NjI1MjQsImV4cCI6MjA5NTEzODUyNH0.BsbQlBRcKAT_Hz4V6Ovo5O_JBBNxJ6bu-u4t7b2rEs8';
