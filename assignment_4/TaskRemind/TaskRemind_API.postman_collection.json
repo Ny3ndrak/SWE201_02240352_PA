@@ -1,0 +1,187 @@
+{
+  "info": {
+    "name": "TaskRemind API",
+    "description": "API endpoints for TaskRemind backend push notifications",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000",
+      "type": "string"
+    },
+    {
+      "key": "apiKey",
+      "value": "dev-api-key-12345",
+      "type": "string"
+    },
+    {
+      "key": "expoPushToken",
+      "value": "ExponentPushToken[YOUR_TOKEN_HERE]",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/",
+          "host": ["{{baseUrl}}"],
+          "path": [""]
+        },
+        "description": "Check if backend server is running and view available endpoints"
+      }
+    },
+    {
+      "name": "Register Device Token",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "X-API-Key",
+            "value": "{{apiKey}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"expoPushToken\": \"{{expoPushToken}}\",\n  \"deviceId\": \"test-device-123\",\n  \"platform\": \"android\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/register-token",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "register-token"]
+        },
+        "description": "Register a device's Expo push token with the backend"
+      }
+    },
+    {
+      "name": "Send Test Notification",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "X-API-Key",
+            "value": "{{apiKey}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"expoPushToken\": \"{{expoPushToken}}\",\n  \"title\": \"Test Notification\",\n  \"body\": \"This is a test notification from Postman!\",\n  \"data\": {\n    \"type\": \"test\",\n    \"source\": \"postman\"\n  }\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/send-notification",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "send-notification"]
+        },
+        "description": "Send a test push notification to a specific device"
+      }
+    },
+    {
+      "name": "Task Created Notification",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "X-API-Key",
+            "value": "{{apiKey}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"expoPushToken\": \"{{expoPushToken}}\",\n  \"taskId\": \"task-12345\",\n  \"title\": \"Submit Assignment\",\n  \"dueDate\": \"2026-06-10T15:00:00.000Z\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/task-created",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "task-created"]
+        },
+        "description": "Notify backend that a task was created (backend sends confirmation notification)"
+      }
+    },
+    {
+      "name": "Broadcast to All Devices",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "X-API-Key",
+            "value": "{{apiKey}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Team Announcement\",\n  \"body\": \"New feature released! Check it out.\",\n  \"data\": {\n    \"type\": \"announcement\",\n    \"priority\": \"high\"\n  }\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/broadcast",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "broadcast"]
+        },
+        "description": "Send a broadcast notification to all registered devices"
+      }
+    },
+    {
+      "name": "Get All Registered Tokens",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-API-Key",
+            "value": "{{apiKey}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/tokens",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "tokens"]
+        },
+        "description": "List all registered device tokens (for debugging)"
+      }
+    },
+    {
+      "name": "Send with Task ID (for navigation)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "X-API-Key",
+            "value": "{{apiKey}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"expoPushToken\": \"{{expoPushToken}}\",\n  \"title\": \"Task Due Soon!\",\n  \"body\": \"Your task 'Complete Assignment' is due in 15 minutes\",\n  \"data\": {\n    \"taskId\": \"1234567890\",\n    \"type\": \"task-reminder\",\n    \"priority\": \"high\"\n  }\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/send-notification",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "send-notification"]
+        },
+        "description": "Send notification with taskId - tapping will navigate to task detail screen"
+      }
+    }
+  ]
+}
