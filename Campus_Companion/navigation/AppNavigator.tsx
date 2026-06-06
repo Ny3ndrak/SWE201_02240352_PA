@@ -26,6 +26,8 @@ export type TabParamList = {
   Schedule: undefined;
   Notice: undefined;
   CampusMap: undefined;
+  AnimationDemo: undefined;
+  Profile: undefined;
 };
 
 const Stack = createStackNavigator<RootStackParamList>();

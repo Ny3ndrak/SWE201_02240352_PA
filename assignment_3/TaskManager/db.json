@@ -1,0 +1,18 @@
+{
+  "users": [],
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Sample Task",
+      "description": "This is a sample task",
+      "status": "pending",
+      "categoryId": "1",
+      "createdAt": "2026-01-01"
+    }
+  ],
+  "categories": [
+    { "id": "1", "name": "Work", "color": "#4F46E5" },
+    { "id": "2", "name": "Personal", "color": "#10B981" },
+    { "id": "3", "name": "Study", "color": "#F59E0B" }
+  ]
+}

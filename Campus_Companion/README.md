@@ -1,10 +1,208 @@
-# Campus Companion
+# Campus Companion 📱
 
-A comprehensive React Native mobile application designed to help students quickly access key campus information. Built with Expo and React Navigation, this app provides an intuitive interface for viewing important contacts, class schedules, and campus notices.
+> **A modern student productivity app with smooth animations and intuitive navigation**
 
-## App Overview
+Student ID: 02240352 | Module: SWE201 | Assignment 2
 
-Campus Companion is a multi-screen mobile application that demonstrates core React Native concepts including:
+---
+
+## 🚀 Quick Start
+
+```bash
+# Install dependencies
+npm install
+
+# Start the app
+npm start
+
+# Run on iOS
+npm run ios
+
+# Run on Android
+npm run android
+```
+
+---
+
+## 📋 What's Inside
+
+**8 Fully Functional Screens:**
+- 🏠 Home - Animated landing page
+- 👥 Contacts - Searchable directory
+- 📅 Schedule - Weekly timetable
+- 📢 Notices - Campus announcements
+- 🗺️ Campus Map - Location guides
+- ⚡ Animation Demo - Interactive showcase
+- 👤 Profile - Settings & preferences
+- 📋 Contact Details - Full information
+
+**Key Features:**
+- ✨ 6+ different animations (fade, scale, slide, rotate, progress, drag)
+- 🎯 Gesture interactions (drag & drop, swipe, scroll)
+- 🎨 Light/Dark mode with smooth transitions
+- 📱 Responsive design for all screen sizes
+- 🧩 10+ reusable components
+- 🔄 Stack + Tab navigation
+- 🎭 Professional UI/UX design
+
+---
+
+## 🎬 Animations Implemented
+
+1. **Fade In/Out** - Smooth opacity transitions
+2. **Scale & Bounce** - Spring-based animations
+3. **Slide** - Directional movement with stagger
+4. **Rotation** - 360° spin animations
+5. **Progress Bar** - Color interpolation
+6. **Pulse** - Continuous loop effect
+7. **Drag Gesture** - PanResponder with spring-back
+
+---
+
+## 📂 Project Structure
+
+```
+Campus_Companion/
+├── screens/           # 8 screens
+├── components/        # Reusable UI & animated components
+├── navigation/        # Stack & Tab navigators
+├── assets/            # Images and icons
+├── App.tsx            # Root component
+└── package.json       # Dependencies
+```
+
+---
+
+## 🎯 Assignment Requirements
+
+✅ Multi-screen navigation (Stack + Tabs)  
+✅ 5+ screens (implemented 8)  
+✅ 2+ animations (implemented 6+)  
+✅ 1+ gesture (implemented 2)  
+✅ Reusable components (created 10+)  
+✅ Responsive layout  
+✅ No backend/API calls  
+✅ Professional UI/UX  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: React Native + Expo
+- **Language**: TypeScript
+- **Navigation**: React Navigation (Stack + Bottom Tabs)
+- **Animations**: React Native Animated API
+- **Icons**: @expo/vector-icons
+- **Gestures**: PanResponder
+
+---
+
+## 📱 Features Showcase
+
+### Navigation
+- Home → 6 Tab Screens
+- Contacts → Contact Details (with params)
+- Smooth transitions between all screens
+
+### Animations
+- Every screen has at least one animation
+- Dedicated Animation Demo screen
+- 60 FPS performance with `useNativeDriver`
+
+### Gestures
+- Drag & drop interactive element
+- Smooth scroll throughout
+- Touch feedback on all buttons
+
+### Theme
+- Light/Dark mode toggle
+- Consistent color palette
+- Accessible typography
+
+---
+
+## 📖 Documentation
+
+For detailed documentation including:
+- Screen descriptions
+- Animation technical details
+- Navigation flow diagrams
+- Code organization
+- Design decisions
+
+See [ASSIGNMENT_DOCUMENTATION.md](./ASSIGNMENT_DOCUMENTATION.md)
+
+---
+
+## 🎓 Learning Outcomes
+
+## 🎓 Learning Outcomes
+
+This project demonstrates:
+- ✅ React Navigation mastery
+- ✅ Advanced animation techniques
+- ✅ Gesture handling
+- ✅ Component architecture
+- ✅ TypeScript integration
+- ✅ Responsive design
+- ✅ State management with hooks
+
+---
+
+## 📸 Screenshots
+
+> Add screenshots of all screens showing:
+> - Home with animations
+> - Contact list and details
+> - Schedule grid
+> - Notice board
+> - Campus map
+> - Animation demo
+> - Profile & settings
+> - Dark mode
+
+---
+
+## 🚀 Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+
+# Clear cache
+npm start --reset-cache
+
+# Run tests (if implemented)
+npm test
+```
+
+---
+
+## 📝 Notes
+
+- All data is mock/local (no backend)
+- Works on iOS and Android
+- Optimized for performance
+- Production-ready code structure
+
+---
+
+## 👨‍💻 About
+
+Created for SWE201 Assignment 2  
+Student ID: 02240352  
+Date: May 3, 2026
+
+**Made with ❤️ for students**
+
+---
+
+## 📄 License
+
+Educational purposes - SWE201 Coursework
 
 - **Navigation**: Stack Navigator combined with Bottom Tab Navigator
 - **UI Components**: FlatList, ScrollView, TouchableOpacity, and custom components

@@ -6,13 +6,15 @@ import ContactScreen from '../screens/ContactScreen';
 import ScheduleScreen from '../screens/ScheduleScreen';
 import NoticeScreen from '../screens/NoticeScreen';
 import CampusMapScreen from '../screens/CampusMapScreen';
+import ProfileScreen from '../screens/ProfileScreen';
+import AnimationDemoScreen from '../screens/AnimationDemoScreen';
 import type { TabParamList } from './AppNavigator';
 
 const Tab = createBottomTabNavigator<TabParamList>();
 
 /**
  * BottomTabs Navigator Component
- * Implements Bottom Tab Navigation with 3 main screens
+ * Implements Bottom Tab Navigation with all main screens
  * Uses dynamic theme colors and responsive sizing
  */
 const BottomTabs: React.FC = () => {
@@ -94,6 +96,32 @@ const BottomTabs: React.FC = () => {
           ),
           headerTitle: 'Campus Map',
           tabBarLabel: 'Map',
+        }}
+      />
+      
+      {/* Animation Demo Tab - Showcase of animations and gestures */}
+      <Tab.Screen
+        name="AnimationDemo"
+        component={AnimationDemoScreen}
+        options={{
+          tabBarIcon: ({ focused, color, size }) => (
+            <AntDesign name="star" size={size} color={color} />
+          ),
+          headerTitle: 'Animation Demo',
+          tabBarLabel: 'Animations',
+        }}
+      />
+      
+      {/* Profile Tab - User settings and profile */}
+      <Tab.Screen
+        name="Profile"
+        component={ProfileScreen}
+        options={{
+          tabBarIcon: ({ focused, color, size }) => (
+            <AntDesign name="user" size={size} color={color} />
+          ),
+          headerTitle: 'My Profile',
+          tabBarLabel: 'Profile',
         }}
       />
     </Tab.Navigator>
